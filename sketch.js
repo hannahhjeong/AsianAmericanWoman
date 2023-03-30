@@ -126,7 +126,6 @@ function setup() {
 }
 
 function draw() {
- // noLoop();
    //title
   noStroke();
   textSize(20);
@@ -146,6 +145,11 @@ function draw() {
   text("american", 60, 20);
   text("woman", textWidth("asian")+textWidth("american")+20, 20);
 
+  //instructions
+  fill(0);
+  text("click to randomize", width-textWidth("click to randomize"), 20);
+
+  
   //pixel distortion
   let x1 = random(width);
   let y1 = random(height);
